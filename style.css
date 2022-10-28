@@ -1,0 +1,58 @@
+/*
+color pallete:
+
+*/
+:root{
+    --yellow:#FFB81D;
+    --gray:#404348;
+    --brown:#C89C76;
+    --white:#EFECEC;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;  
+}
+
+.header{
+    background-color: var(--yellow);
+    display: flex;
+}
+.logo-container{
+    display: flex;
+}
+.nav-ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.intro{
+    background-image: url("images/intro-image.webp");
+    height: 650px;
+
+}
+.categories{
+    display: flex;
+
+}
+.category-item{
+    width:200px;
+    
+}
+.category-image{
+    width: 100%;
+    height: 145px;
+}
+
+
+.description{
+    display: flex;
+}
