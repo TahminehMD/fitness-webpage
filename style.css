@@ -2,7 +2,7 @@
 color pallete:
 
 */
-:root{
+:root{ 
     --yellow:#FFB81D;
     --gray:#404348;
     --brown:#C89C76;
@@ -24,7 +24,9 @@ body{
 
 .header{
     background-color: var(--yellow);
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
 }
 .logo-container{
     display: flex;
@@ -33,7 +35,37 @@ body{
     list-style: none;
     display: flex;
     gap: 20px;
+    padding-top: 15px;
+    padding-left:20px;
 }
+.nav-ul a{
+    text-decoration: none;
+    color:var(--gray);
+    font-size: 18px;
+}
+#input-background{
+    background-color: whitesmoke;
+    height:32px;
+    width:200px;
+    border-radius: 20px;
+    margin-top:14px;
+    margin-right: 10px;
+    
+}
+.search-container input{
+      height:32px;
+      width:200px;
+      margin-right: 20px;
+      border-radius: 20px;
+      border:solid 1px var(--gray);
+      background:url(images/search.png);
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: 10px 5px;
+      
+
+}
+
 .intro{
     background-image: url("images/intro-image.webp");
     height: 650px;
@@ -56,3 +88,5 @@ body{
 .description{
     display: flex;
 }
+
+
