@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.scss">
+    <link rel="stylesheet" href="background.css">
     <title>Document</title>
 </head>
 
-<body>
+<body >
     <header class="header">
         <div class="logo-container">
-            <img
-                src="images/fitness-logo-template-with-an-abstract-energetic-human-illustration-2457a-1024x1024.png"
+            <img src="images/fitness-logo-template-with-an-abstract-energetic-human-illustration-2457a-1024x1024.png"
                 alt="" height="60">
 
             <h1>MISSFITS</h1>
@@ -30,13 +31,13 @@
         </nav>
         <div class="search-container">
             <div id="input-background">
-            <input type="text">
+                <input type="text">
             </div>
         </div>
-        
+
     </header>
     <section class="intro">
-        <div>
+        <div class="motif">
             <h1>Join The Fits</h1>
             <p> We are hiring new people</p>
             <button>Sign Up</button>
@@ -44,43 +45,67 @@
     </section>
 
     <section class="categories">
-        <article class="category-item">
-            <a class="category-link" href="#">
-                <img  class="category-image"  src="images/full-body.png" alt=""> 
-                <h1 class="category-name"> Full Body</h1>
-            </a>
-        </article>
-        <article class="category-item">
-            <a class="category-link" href="#">
-                <img  class="category-image"  src="images/streching.jpeg" alt=""> 
-                <h1 class="category-name">Streching</h1>
-            </a>
-        </article>
-        <article class="category-item">
-            <a class="category-link" href="#">
-                <img  class="category-image"  src="images/relaxation.jpeg" alt=""> 
-                <h1 class="category-name"> Relaxation</h1>
-            </a>
-        </article>
+        <div class="category-parent">
+            <article class="category-item">
+                <a class="category-link" href="images/workout/fullbody.jpg">
+                    <img class="category-image" src="images/full-body.png" alt="">
+                    <h1 class="category-name"> Full Body</h1>
+                </a>
+            </article>
+            <article class="category-item">
+                <a class="category-link" href="#">
+                    <img class="category-image" src="images/streching.jpeg" alt="">
+                    <h1 class="category-name">Streching</h1>
+                </a>
+            </article>
+            <article class="category-item">
+                <a class="category-link" href="#">
+                    <img class="category-image" src="images/relaxation.jpeg" alt="">
+                    <h1 class="category-name"> Relaxation</h1>
+                </a>
+            </article>
+        </div>
     </section>
     <section class="description">
         <div class="gallery">
+            <img class="gallery-item" width="250" src="images/gallery1.avif">
+            <img class="gallery-item" width="250" src="images/gallery2.avif">
+            <img class="gallery-item" width="250" src="images/gallery3.png">
 
         </div>
         <div class="story">
-            <h1>My story</h1>
-            <p> My Experieces</p>
+            <h1 class="text">My Story</h1>
+            <p> I’ll never forget the days when I finished working at my desk and I stood up behind the desk with a
+                sharp pain in my shoulders. After many times of
+                <b>experiencing this pain</b>, I understood that it is because of my posture and I can solve my problem
+                with small tricks.This is the real reason behind my decision to design this website: I have decided to
+                raise people’s awareness and then<b>
+                    offer solutions to help</b> their problems related to their body postures.
+            </p>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="socialing">
+    <div class= "delimiter">
 
-        </div>
-        <div class="map">
+    </div>
 
-        </div>
+    <footer class="footer">       
+      <ul>
+        <li><h1>Get To Know Us</h1></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      
     </footer>
+    
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
 </body>
 
 </html>
