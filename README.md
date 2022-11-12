@@ -11,6 +11,13 @@
 
 ## My challening :
 Paragraph:
+//how make search in html
+ uses a combination of CSS tricks to pull this off. First, it uses a background-image for the <input> element. Then, in order to push the cursor over, it uses padding-left.
+
+In other words, they have these two CSS rules:
+
+background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
+padding-left:30px;
 
  ##### challege one
    1. First of all, I go to my colleagues and ask them about the reason they are not satisfied with the result of my work.
