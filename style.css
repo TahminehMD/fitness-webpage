@@ -1,5 +1,5 @@
 
-
+/* google font */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;100;600;400&display=swap');
 
 /*color pallete:*/
@@ -52,7 +52,7 @@ body {
     color: var(--gray);
     font-size: 18px;
 }
-
+ /* background for search input */
 #input-background {
     background-color: whitesmoke;
     height: 32px;
@@ -61,7 +61,7 @@ body {
     margin-top: 14px;
     margin-right: 10px;
 }
-
+/* search bar input */
 .search-container input {
     height: 32px;
     width: 200px;
@@ -73,6 +73,7 @@ body {
     background-repeat: no-repeat;
     background-position: 10px 5px;
 }
+/*hamburger button*/
 .menu-button{
    height : 100%;
    width: 50px;
@@ -83,6 +84,7 @@ body {
   
 
 }
+/* hamburger button lines */
 .menu-button div{
     width:80%;
     height:2px;
@@ -93,9 +95,7 @@ body {
 .menu{
     background-color:var(--brown);
 }
-.hide{
-    display:none;
-}
+
 .menu-ul a {
     text-decoration: none;
     color: var(--gray);
@@ -105,7 +105,7 @@ body {
     padding-left: 40px;
     list-style: none;
 }
-/* make hamburgerbar for width less than normal diaplay */
+/* make hamburger bar for width less than normal display */
 @media screen and (max-width: 920px){
     .menu-button{
         display:block;
@@ -126,7 +126,7 @@ body {
     background-size: cover;
     opacity: 0.85;
 }
-
+/* black gradient background to emphasis text */
 .motif {
     background: linear-gradient(to right, #000, #ffffff00);
     width: 600px;
@@ -158,7 +158,7 @@ body {
     border: none;
 
 }
-
+/*  skew div  with transform */
 .categories {
     transform: skewY(5deg);
     background-color: var(--gray);
@@ -223,7 +223,7 @@ body {
     position: absolute;
     border-radius: 5px;
 }
-
+ /* bring image to front */
 .gallery-item:hover {
     scale: 120%;
     z-index: 999;
@@ -283,9 +283,16 @@ body {
      padding-top: 120px;
      padding-right: 40px;
  }
-.frame{
-    display:grid;
-    grid-template-columns: 1fr auto 1fr;
-    width:853px;
-    height:480px;
+ .frame{
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+ }
+ .frame-container{
+     display:grid;
+     grid-template-columns: 1fr auto 1fr;    
+     z-index: 3000;
+ }
+.hide{
+    display:none;
 }

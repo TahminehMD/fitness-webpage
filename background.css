@@ -43,7 +43,7 @@ html {
   h1 {
     font-family:monospace;
   }
-  
+  /* animation part */
   @keyframes slide {
     0% {
       transform:translateX(-25%);
